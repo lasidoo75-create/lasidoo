@@ -3,144 +3,270 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LEBAH777</title>
+<title>Tangga Lipat Premium</title>
 
 <style>
-*{box-sizing:border-box;}
-body{
-    margin:0;
-    background:#000;
-    font-family:Arial, sans-serif;
-    color:#fff;
-}
-.wrapper{
-    max-width:420px;
-    margin:auto;
-    padding:12px;
-    background:linear-gradient(180deg,#111,#000);
-}
-.header{
-    text-align:center;
-    font-size:22px;
-    font-weight:bold;
-    letter-spacing:1px;
-    color:#ffd700;
-    margin-bottom:10px;
-}
-.photo img{
-    width:100%;
-    border-radius:10px;
-    display:block;
-    box-shadow:0 0 15px rgba(255,215,0,0.3);
-}
-.banner{
-    background:linear-gradient(90deg,#3a2c00,#ffd700,#3a2c00);
-    color:#000;
-    text-align:center;
-    padding:10px;
-    margin:12px 0;
-    border-radius:8px;
-    font-weight:bold;
-}
-.buttons{
-    display:flex;
-    gap:10px;
-    margin-bottom:12px;
-}
-.buttons a{
-    flex:1;
-    text-align:center;
-    padding:13px;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:8px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
 }
 
-/* 🔥 DAFTAR NYALA–REDUP */
-.daftar{
-    background:linear-gradient(#ffd700,#caa400);
-    color:#000;
-    animation: glow 1.6s infinite alternate;
+/* HEADER */
+header {
+    background: #37474f;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
-/* ANIMASI GLOW */
-@keyframes glow{
-    0%{
-        box-shadow:
-            0 0 6px rgba(255,215,0,0.4),
-            0 0 12px rgba(255,215,0,0.3);
-    }
-    100%{
-        box-shadow:
-            0 0 14px rgba(255,215,0,0.9),
-            0 0 28px rgba(255,215,0,0.7),
-            0 0 40px rgba(255,215,0,0.5);
-    }
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #546e7a;
+    padding: 10px;
 }
 
-.login{
-    background:linear-gradient(#222,#000);
-    color:#ffd700;
-    border:1px solid #ffd700;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* ✅ TEKS INFO PUTIH JELAS */
-.info{
-    background:#0c0c0c;
-    padding:14px;
-    font-size:14px;
-    border-radius:8px;
-    border:1px solid #333;
-    color:#ffffff;
-    line-height:1.6;
+/* MARQUEE */
+.marquee {
+    background: #ffd54f;
+    padding: 10px;
+    font-weight: bold;
 }
 
-.footer{
-    text-align:center;
-    font-size:11px;
-    margin-top:10px;
-    color:#aaa;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 30px;
+    background: white;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: contain; /* PENTING: agar tidak kepotong */
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* FLASH SALE */
+.flash-sale {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+}
+
+.slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain; /* biar tangga full terlihat */
+    background: #fff;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+/* SECTION */
+.section {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* TESTIMONI */
+.testimoni {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+button {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #37474f;
+    color: white;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
+<header>
+    <h1>Tangga Lipat Premium</h1>
+    <p>Kuat • Aman • Multifungsi</p>
+</header>
 
-    <div class="header"></div>
+<nav>
+    <a href="#produk">Produk</a>
+    <a href="#promo">Promo</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#kontak">Kontak</a>
+</nav>
 
-    <!-- FOTO BISA DIKLIK -->
-    <a href="https://lebahmain72.buzz/account/register">
-        <div class="photo">
-            <img src="https://s12.gifyu.com/images/bko4U.jpg" alt="Promo LEBAH777" loading="lazy">
-        </div>
-    </a>
-
-    <div class="banner">
-        Game Slot terpercaya #1<br>
-        se-INDONESIA
-    </div>
-
-    <!-- TOMBOL -->
-    <div class="buttons">
-        <a href="https://lebahmain72.buzz/account/register" class="daftar">DAFTAR</a>
-        <a href="https://lebahmain72.buzz/account/register" class="login">LOGIN</a>
-    </div>
-
-    <!-- INFO -->
-    <div class="info">
-        Nama: LEBAH777<br>
-        Payment: QRIS , BANK TRANSFER & E-Wallet<br>
-        Deposit: Rp 10.000<br>
-        Withdraw: Rp 50.000
-    </div>
-
-    <div class="footer">
-        © LEBAH777
-    </div>
-
+<div class="marquee">
+<marquee>🔥 Promo Hari Ini! Diskon hingga 40% | Tangga Aluminium & Lipat | Stok Terbatas 🔥</marquee>
 </div>
+
+<!-- HERO -->
+<div class="hero" id="produk">
+    <h2>Tangga Serbaguna untuk Rumah & Proyek</h2>
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Tangga">
+    <p>Tangga kokoh dan aman untuk berbagai kebutuhan Anda.</p>
+</div>
+
+<!-- FLASH SALE -->
+<div class="flash-sale" id="promo">
+    FLASH SALE! Mulai Rp199.000
+</div>
+
+<!-- SLIDER FOTO TANGGA (TIDAK TERPOTONG) -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+        <img src="https://images.unsplash.com/photo-1581091870627-3b5c9c1c1c4d">
+    </div>
+</div>
+
+<!-- KEUNGGULAN -->
+<div class="section">
+    <h2>Keunggulan Tangga Kami</h2>
+    <ul>
+        <li>✔ Material aluminium kuat & ringan</li>
+        <li>✔ Anti slip & aman digunakan</li>
+        <li>✔ Bisa dilipat & hemat tempat</li>
+        <li>✔ Cocok untuk rumah & proyek</li>
+        <li>✔ Tahan lama & anti karat</li>
+    </ul>
+</div>
+
+<!-- CTA -->
+<div class="section">
+    <h2>Pesan Sekarang</h2>
+    <p>Solusi praktis untuk semua kebutuhan Anda</p>
+    <a href="https://wa.me/6281234567890">
+        <button>Pesan via WhatsApp</button>
+    </a>
+</div>
+
+<script>
+const reviews = [
+    "Andi dari Jakarta baru beli Tangga Lipat 3 Step seharga Rp199.000 ⭐⭐⭐⭐⭐",
+    "Budi dari Bandung membeli Tangga Aluminium Pro Rp349.000 - sangat kokoh 👍",
+    "Sari dari Surabaya pesan Tangga Multifungsi Rp499.000 - puas banget 😍",
+    "Rina dari Bekasi beli Tangga Lipat Premium Rp299.000 - kualitas mantap 💯",
+    "Dedi dari Medan membeli Tangga 5 Step Rp399.000 - kuat & stabil 🔥",
+    "Lina dari Depok pesan Tangga Aluminium Rp279.000 - ringan & praktis 👍",
+    "Agus dari Semarang beli Tangga Lipat Besar Rp459.000 - recommended ⭐⭐⭐⭐⭐",
+    "Tono dari Jogja membeli Tangga Serbaguna Rp329.000 - sangat membantu 💪",
+    "Maya dari Bali pesan Tangga Rumah Rp259.000 - bagus & aman 😍",
+    "Rudi dari Makassar beli Tangga Lipat Rp289.000 - worth it banget 💯"
+];
+
+function showPopup() {
+    const popup = document.getElementById("popup");
+    
+    // kalau belum ada div popup, buat otomatis
+    if (!popup) {
+        const div = document.createElement("div");
+        div.id = "popup";
+        div.style.position = "fixed";
+        div.style.bottom = "20px";
+        div.style.left = "20px";
+        div.style.background = "white";
+        div.style.padding = "12px";
+        div.style.borderRadius = "8px";
+        div.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
+        div.style.maxWidth = "260px";
+        document.body.appendChild(div);
+    }
+
+    const popupBox = document.getElementById("popup");
+    const random = reviews[Math.floor(Math.random() * reviews.length)];
+    
+    popupBox.innerText = random;
+    popupBox.style.display = "block";
+
+    setTimeout(() => {
+        popupBox.style.display = "none";
+    }, 4000);
+}
+
+// tampil tiap 5 detik
+setInterval(showPopup, 5000);
+</script>
+
+<!-- TESTIMONI -->
+<div class="section" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+
+    <div class="testimoni">
+        <p>"Tangga kuat dan stabil, aman dipakai!"</p>
+        <strong>- Andi</strong>
+    </div>
+
+    <div class="testimoni">
+        <p>"Ringan tapi kokoh, mudah disimpan."</p>
+        <strong>- Budi</strong>
+    </div>
+
+    <div class="testimoni">
+        <p>"Harga murah kualitas bagus."</p>
+        <strong>- Sari</strong>
+    </div>
+</div>
+
+<!-- KONTAK -->
+<div class="section" id="kontak">
+    <h2>Kontak</h2>
+    <p>WhatsApp: 081234567890</p>
+    <p>Email: sales@tanggastore.com</p>
+</div>
+
+<footer>
+    <p>&copy; 2026 Tangga Store. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
