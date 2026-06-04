@@ -1,271 +1,166 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tangga Lipat Premium</title>
+    <meta charset="UTF-8">
+    <title>Stick Billiard Premium</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-}
+        header {
+            background: #0b3d2e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
 
-/* HEADER */
-header {
-    background: #37474f;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #546e7a;
-    padding: 10px;
-}
+        .hero {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .hero img {
+            max-width: 420px;
+            width: 100%;
+            border-radius: 10px;
+        }
 
-/* MARQUEE */
-.marquee {
-    background: #ffd54f;
-    padding: 10px;
-    font-weight: bold;
-}
+        .hero-text h1 {
+            margin-bottom: 10px;
+        }
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 30px;
-    background: white;
-}
+        .price {
+            color: #0b3d2e;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
 
-.hero img {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-    object-fit: contain; /* PENTING: agar tidak kepotong */
-    background: #fff;
-    border-radius: 10px;
-}
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            background: #0b3d2e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
 
-/* FLASH SALE */
-.flash-sale {
-    background: #d32f2f;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-}
+        .btn:hover {
+            background: #14664d;
+        }
 
-/* SLIDER */
-.slider {
-    width: 100%;
-    overflow: hidden;
-    background: white;
-}
+        .features {
+            margin-top: 40px;
+        }
 
-.slides {
-    display: flex;
-    animation: slide 12s infinite;
-}
+        .features ul {
+            padding-left: 20px;
+        }
 
-.slides img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain; /* biar tangga full terlihat */
-    background: #fff;
-}
+        .testimonial {
+            margin-top: 50px;
+        }
 
-@keyframes slide {
-    0% {transform: translateX(0);}
-    33% {transform: translateX(-100%);}
-    66% {transform: translateX(-200%);}
-    100% {transform: translateX(0);}
-}
+        .testimonial h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-/* SECTION */
-.section {
-    background: white;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-}
+        .testimonial-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-/* TESTIMONI */
-.testimoni {
-    background: #f1f1f1;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-}
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
 
-/* BUTTON */
-button {
-    background: #25D366;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #37474f;
-    color: white;
-}
-</style>
+        footer {
+            background: #0b3d2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Tangga Lipat Premium</h1>
-    <p>Kuat • Aman • Multifungsi</p>
+    <h1>Stick Billiard Premium</h1>
+    <p>Akurasi Tinggi • Seimbang • Profesional</p>
 </header>
 
-<nav>
-    <a href="#produk">Produk</a>
-    <a href="#promo">Promo</a>
-    <a href="#testimoni">Testimoni</a>
-    <a href="#kontak">Kontak</a>
-</nav>
+<div class="container">
 
-<div class="marquee">
-<marquee>🔥 Promo Hari Ini! Diskon hingga 40% | Tangga Aluminium & Lipat | Stok Terbatas 🔥</marquee>
-</div>
-
-<!-- HERO -->
-<div class="hero" id="produk">
-    <h2>Tangga Serbaguna untuk Rumah & Proyek</h2>
-    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Tangga">
-    <p>Tangga kokoh dan aman untuk berbagai kebutuhan Anda.</p>
-</div>
-
-<!-- FLASH SALE -->
-<div class="flash-sale" id="promo">
-    FLASH SALE! Mulai Rp199.000
-</div>
-
-<!-- SLIDER FOTO TANGGA (TIDAK TERPOTONG) -->
-<div class="slider">
-    <div class="slides">
-        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91">
-        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
-        <img src="https://images.unsplash.com/photo-1581091870627-3b5c9c1c1c4d">
-    </div>
-</div>
-
-<!-- KEUNGGULAN -->
-<div class="section">
-    <h2>Keunggulan Tangga Kami</h2>
-    <ul>
-        <li>✔ Material aluminium kuat & ringan</li>
-        <li>✔ Anti slip & aman digunakan</li>
-        <li>✔ Bisa dilipat & hemat tempat</li>
-        <li>✔ Cocok untuk rumah & proyek</li>
-        <li>✔ Tahan lama & anti karat</li>
-    </ul>
-</div>
-
-<!-- CTA -->
-<div class="section">
-    <h2>Pesan Sekarang</h2>
-    <p>Solusi praktis untuk semua kebutuhan Anda</p>
-    <a href="https://wa.me/6281234567890">
-        <button>Pesan via WhatsApp</button>
-    </a>
-</div>
-
-<script>
-const reviews = [
-    "Andi dari Jakarta baru beli Tangga Lipat 3 Step seharga Rp199.000 ⭐⭐⭐⭐⭐",
-    "Budi dari Bandung membeli Tangga Aluminium Pro Rp349.000 - sangat kokoh 👍",
-    "Sari dari Surabaya pesan Tangga Multifungsi Rp499.000 - puas banget 😍",
-    "Rina dari Bekasi beli Tangga Lipat Premium Rp299.000 - kualitas mantap 💯",
-    "Dedi dari Medan membeli Tangga 5 Step Rp399.000 - kuat & stabil 🔥",
-    "Lina dari Depok pesan Tangga Aluminium Rp279.000 - ringan & praktis 👍",
-    "Agus dari Semarang beli Tangga Lipat Besar Rp459.000 - recommended ⭐⭐⭐⭐⭐",
-    "Tono dari Jogja membeli Tangga Serbaguna Rp329.000 - sangat membantu 💪",
-    "Maya dari Bali pesan Tangga Rumah Rp259.000 - bagus & aman 😍",
-    "Rudi dari Makassar beli Tangga Lipat Rp289.000 - worth it banget 💯"
-];
-
-function showPopup() {
-    const popup = document.getElementById("popup");
-    
-    // kalau belum ada div popup, buat otomatis
-    if (!popup) {
-        const div = document.createElement("div");
-        div.id = "popup";
-        div.style.position = "fixed";
-        div.style.bottom = "20px";
-        div.style.left = "20px";
-        div.style.background = "white";
-        div.style.padding = "12px";
-        div.style.borderRadius = "8px";
-        div.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
-        div.style.maxWidth = "260px";
-        document.body.appendChild(div);
-    }
-
-    const popupBox = document.getElementById("popup");
-    const random = reviews[Math.floor(Math.random() * reviews.length)];
-    
-    popupBox.innerText = random;
-    popupBox.style.display = "block";
-
-    setTimeout(() => {
-        popupBox.style.display = "none";
-    }, 4000);
-}
-
-// tampil tiap 5 detik
-setInterval(showPopup, 5000);
-</script>
-
-<!-- TESTIMONI -->
-<div class="section" id="testimoni">
-    <h2>Testimoni Pelanggan</h2>
-
-    <div class="testimoni">
-        <p>"Tangga kuat dan stabil, aman dipakai!"</p>
-        <strong>- Andi</strong>
+    <!-- HERO -->
+    <div class="hero">
+        <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a2828023e41340c7adc115f8f5a0e35e~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=e1be8f53&idc=my&from=2378011839" alt="Stick Billiard">
+        <div class="hero-text">
+            <h1>Stick Billiard Profesional</h1>
+            <p>
+                Stick billiard berkualitas tinggi dengan grip nyaman dan
+                keseimbangan sempurna untuk pemula hingga pro player.
+            </p>
+            <div class="price">Rp 499.000</div>
+            <a href="#" class="btn">Pesan Sekarang</a>
+        </div>
     </div>
 
-    <div class="testimoni">
-        <p>"Ringan tapi kokoh, mudah disimpan."</p>
-        <strong>- Budi</strong>
+    <!-- FITUR -->
+    <div class="features">
+        <h2>Keunggulan Produk</h2>
+        <ul>
+            <li>Material kayu maple berkualitas tinggi</li>
+            <li>Grip nyaman & anti slip</li>
+            <li>Presisi tinggi untuk akurasi maksimal</li>
+            <li>Cocok untuk latihan & turnamen</li>
+        </ul>
     </div>
 
-    <div class="testimoni">
-        <p>"Harga murah kualitas bagus."</p>
-        <strong>- Sari</strong>
-    </div>
-</div>
+    <!-- TESTIMONI -->
+    <div class="testimonial">
+        <h2>Rekomendasi Customer</h2>
+        <div class="testimonial-list">
+            <div class="card">
+                <p>"Stick-nya enak banget dipakai, balance pas dan presisi."</p>
+                <strong>⭐⭐⭐⭐⭐</strong><br>
+                <small>- Rizky, Jakarta</small>
+            </div>
 
-<!-- KONTAK -->
-<div class="section" id="kontak">
-    <h2>Kontak</h2>
-    <p>WhatsApp: 081234567890</p>
-    <p>Email: sales@tanggastore.com</p>
+            <div class="card">
+                <p>"Kualitas premium, cocok buat main serius."</p>
+                <strong>⭐⭐⭐⭐⭐</strong><br>
+                <small>- Dedi, Bekasi</small>
+            </div>
+
+            <div class="card">
+                <p>"Harga sesuai kualitas, recommended!"</p>
+                <strong>⭐⭐⭐⭐⭐</strong><br>
+                <small>- Arif, Surabaya</small>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 Tangga Store. All Rights Reserved.</p>
+    <p>© 2026 Stick Billiard Premium</p>
 </footer>
 
 </body>
