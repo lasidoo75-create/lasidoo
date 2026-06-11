@@ -1,284 +1,181 @@
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEMUT55</title>
+<title>Tandon Air Premium | Kuat & Tahan Lama</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-background:#000;
-font-family:Arial,sans-serif;
-color:#fff;
+    font-family:'Poppins',sans-serif;
+    background:#eef6fb;
 }
 
-.wrapper{
-max-width:420px;
-margin:auto;
-padding:12px;
-
-background:
-radial-gradient(circle at top,
-rgba(120,0,0,.18),
-transparent 35%),
-
-linear-gradient(
-180deg,
-#140000 0%,
-#090909 40%,
-#000000 100%);
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,100,160,0.6),rgba(0,0,0,0.7)),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUENFBls29nZ4Me1rfPSVdeaLgmABeK-nRQ&s');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-.header{
-text-align:center;
-font-size:22px;
-font-weight:bold;
-color:#ffffff;
-margin-bottom:10px;
-text-shadow:0 0 10px rgba(255,255,255,.15);
+.hero h1{
+    font-size:38px;
+}
+.hero p{
+    margin:15px 0;
 }
 
-.photo{
-margin-bottom:12px;
+/* BUTTON */
+.btn{
+    background:#00bcd4;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.photo img{
-width:100%;
-display:block;
-border-radius:12px;
-
-border:1px solid rgba(255,255,255,.08);
-
-box-shadow:
-0 0 12px rgba(120,0,0,.25),
-0 0 25px rgba(0,0,0,.5);
+/* SECTION */
+.section{
+    padding:50px 20px;
+    text-align:center;
 }
 
-/* BANNER */
-
-.banner{
-background:
-linear-gradient(
-180deg,
-#4b0000 0%,
-#2a0000 50%,
-#120000 100%
-);
-
-color:#f5f5f5;
-text-align:center;
-padding:13px;
-margin-bottom:12px;
-border-radius:10px;
-font-weight:bold;
-font-size:16px;
-line-height:1.5;
-
-border:1px solid rgba(255,255,255,.08);
-
-text-shadow:
-0 0 5px rgba(255,255,255,.25);
-
-box-shadow:
-0 0 8px rgba(120,0,0,.25),
-inset 0 1px 0 rgba(255,255,255,.08);
+/* PRODUK */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
 }
 
-/* BUTTONS */
-
-.buttons{
-display:flex;
-gap:10px;
-margin-bottom:12px;
+.item{
+    width:260px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.item h3{
+    padding:10px;
+}
+.item p{
+    padding:0 10px 15px;
+    font-size:14px;
+    color:#555;
 }
 
-.buttons a{
-flex:1;
-text-align:center;
-text-decoration:none;
-padding:14px;
-border-radius:10px;
-font-weight:bold;
-font-size:15px;
+/* TESTI */
+.testi{
+    max-width:500px;
+    margin:15px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
 }
 
-/* DAFTAR NYALA REDUP */
-
-.daftar{
-background:
-linear-gradient(
-180deg,
-#7a0000 0%,
-#4a0000 55%,
-#220000 100%
-);
-
-color:#fff;
-
-border:1px solid rgba(255,255,255,.12);
-
-text-shadow:
-0 0 4px rgba(255,255,255,.4);
-
-animation:daftarGlow 1.5s infinite alternate;
+/* CTA FIXED */
+.order{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#00bcd4;
+    text-align:center;
+    padding:15px;
 }
-
-@keyframes daftarGlow{
-
-0%{
-box-shadow:
-0 0 8px rgba(255,0,0,.4),
-0 0 15px rgba(255,0,0,.2);
-}
-
-100%{
-box-shadow:
-0 0 18px rgba(255,50,50,.9),
-0 0 35px rgba(255,0,0,.6),
-0 0 55px rgba(255,0,0,.4);
-}
-}
-
-/* LOGIN */
-
-.login{
-
-background:
-linear-gradient(
-180deg,
-#3a3a3a 0%,
-#1b1b1b 50%,
-#090909 100%
-);
-
-color:#fff;
-
-border:1px solid rgba(255,255,255,.08);
-
-box-shadow:
-inset 0 1px 0 rgba(255,255,255,.08);
-}
-
-/* INFO */
-
-.info{
-
-background:
-linear-gradient(
-180deg,
-#121212 0%,
-#080808 100%
-);
-
-padding:14px;
-
-border-radius:10px;
-
-border:1px solid rgba(120,0,0,.35);
-
-line-height:1.8;
-
-font-size:14px;
-
-color:#ffffff;
-
-box-shadow:
-0 0 12px rgba(120,0,0,.12);
-}
-
-/* FOOTER */
-
-.footer{
-
-text-align:center;
-
-font-size:11px;
-
-color:#8c8c8c;
-
-margin-top:12px;
+.order a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-
-<div class="header">
-SEMUT55
+<!-- HERO -->
+<div class="hero">
+    <h1>Tandon Air Kuat & Tahan Lama 🚰</h1>
+    <p>Simpan air lebih aman, bersih, dan tahan bertahun-tahun</p>
+    <a href="#" class="btn">Beli Sekarang</a>
 </div>
 
-<a href="https://semut55.site/account/register">
-
-<div class="photo">
-
-<img
-src="https://s13.gifyu.com/images/bIqxI.jpg"
-alt="SEMUT55"
-loading="lazy">
-
+<!-- DESKRIPSI -->
+<div class="section">
+<h2>Solusi Penyimpanan Air Terbaik</h2>
+<p>
+Tandon air berkualitas tinggi dengan material tebal dan tahan cuaca,
+cocok untuk rumah, usaha, maupun industri.
+</p>
 </div>
 
-</a>
+<!-- PRODUK -->
+<div class="section">
+<h2>Pilihan Tandon</h2>
 
-<div class="banner">
+<div class="menu">
 
-Game Slot Pemain Terbanyak #1
-<br>
-Se-Asia
-
+<div class="item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUENFBls29nZ4Me1rfPSVdeaLgmABeK-nRQ&s">
+<h3>Tandon 500L</h3>
+<p>Kapasitas kecil, praktis</p>
 </div>
 
-<div class="buttons">
+<div class="item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhR36OR8AgLeglHaoNfavGGwoSktoLuLg6Q&s">
+<h3>Tandon 1000L</h3>
+<p>Paling favorit keluarga</p>
+</div>
 
-<a
-href="https://semut55.site/account/register"
-class="daftar">
-
-DAFTAR
-
-</a>
-
-<a
-href="https://semut55.site/account/register"
-class="login">
-
-LOGIN
-
-</a>
+<div class="item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhmc9DWvr3Iwj5jwI1dFBJzOvaFfBjYMDmQ&s">
+<h3>Tandon 2000L</h3>
+<p>Kapasitas besar & kuat</p>
+</div>
 
 </div>
 
-<div class="info">
+</div>
 
-Nama : SEMUT55
-<br>
+<!-- TESTIMONI -->
+<div class="section">
+<h2>Review Pembeli</h2>
 
-Payment : QRIS, BANK TRANSFER & E-Wallet
-<br>
-
-Deposit : Rp 5.000
-<br>
-
-Withdraw : Rp 50.000
+<div class="testi">"Bahannya tebal, kuat banget!"</div>
+<div class="testi">"Air tetap bersih, tidak bau."</div>
+<div class="testi">"Sudah dipakai lama, masih bagus."</div>
 
 </div>
 
-<div class="footer">
-
-Para Raja Bermain Disini
-
+<!-- CTA -->
+<div class="section">
+<h2>Promo Hari Ini</h2>
+<p>Diskon 25% + gratis pemasangan</p>
+<a href="#" class="btn">Ambil Promo</a>
 </div>
 
+<!-- BUTTON FIXED -->
+<div class="order">
+<a href="#">🔥 Order Sekarang via WhatsApp</a>
 </div>
 
 </body>
 </html>
-```
